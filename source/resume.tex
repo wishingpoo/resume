@@ -1,6 +1,10 @@
 \documentclass{res}
 
 \usepackage{enumitem}
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 
 \setlength{\textheight}{9.5in} % increase text height to fit on 1-page
 
@@ -75,8 +79,28 @@
     \end{itemize}
 
 
+\clearpage
 \section{SKILLS}
-    XXX
+    \textbf{Languages}\\
+    \begin{tabular}{ l L{5.5in} }
+    \hspace*{1.2em} & C, C++, C\#, Visual Basic, Matlab, LaTeX, HTML. \\
+    \end{tabular}
+
+    \textbf{Operating Systems}\\
+    \begin{tabular}{ l L{5.5in} }
+    \hspace*{1.2em} & Windows, Linux.  Administered Fedora Linux for my M.Sc. supervisor's research laboratory.\\
+    \end{tabular}
+
+    \textbf{Academic Focus}\vspace{0.5ex}\\
+    \begin{tabular}{ l L{5.5in} }
+    \hspace*{1.2em} & Computer vision and graphics, numerical computing and optimization, machine learning.  Thesis research was on real-time computation of 3D scene models from video imagery.  Wrote matrix and linear algebra libraries in C++ using BLAS and LAPACK.  Graduate course projects include automatic face detection using machine learning algorithms as well as reconstruction of 3D architectural scene models from photographs.\\
+    \end{tabular}
+
+    \textbf{Miscellaneous}\vspace{0.5ex}\\
+    \begin{tabular}{ l L{5.5in} }
+    \hspace*{1.2em} & Strong debugging skills and attention to detail.  Communication skills have matured through frequently presenting M.Sc. work in written and oral forms.\\
+    \end{tabular}
+
 
 
 \end{resume}
